@@ -34,7 +34,7 @@ public class BookmarkService {
     @Transactional(readOnly = true)
     public BookmarksDTO<?> searchBookmarks(String query, Integer page) {
         int pageNo = page < 1 ? 0 : page - 1 ;
-        PageRequest pageable = PageRequest.of(pageNo, 10, Sort.Direction.DESC, "createdAt");
+        PageRequest pageable = PageRequest.of(pageNo, 5, Sort.Direction.DESC, "createdAt");
 
         // jpql
 //        Page<BookmarkDTO> bookmarkPage = repository.searchBookmarks(query, pageable);
