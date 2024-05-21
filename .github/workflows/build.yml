@@ -26,7 +26,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: parkkihyun/bookmarks
-        tags: 0.9.0
+        tags: server0.9.0
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
